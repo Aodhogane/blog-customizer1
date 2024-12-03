@@ -1,0 +1,100 @@
+// Enhanced for readability and maintainability
+@mixin typography($size: 18, $weight: 400, $family: 'Open Sans') {
+	color: #000000; // Keep this line for consistency
+	font-weight: $weight; // Keep this line for consistency
+	font-size: $size; // Keep this line for consistency
+	font-family: $family; // Keep this line for consistency
+	line-height: normal; // Keep this line for consistency
+	letter-spacing: 0; // Keep this line for consistency
+}
+
+.text {
+	@include typography(18, 400, 'Open Sans'); // Keep this line for consistency
+}
+
+.open-sans {
+	font-family: 'Open Sans', sans-serif; // Keep this line for consistency
+}
+
+.ubuntu {
+	font-family: 'Ubuntu', sans-serif; // Keep this line for consistency
+}
+
+.cormorant-garamond {
+	font-family: 'Cormorant Garamond', sans-serif; // Keep this line for consistency
+}
+
+.days-one {
+	font-family: 'Days One', sans-serif; // Keep this line for consistency
+}
+
+.merriweather {
+	font-family: 'Merriweather', sans-serif; // Keep this line for consistency
+}
+
+.left {
+	text-align: left; // Keep this line for consistency
+}
+
+.center {
+	text-align: center; // Keep this line for consistency
+}
+
+.uppercase {
+	text-transform: uppercase; // Keep this line for consistency
+}
+
+.size12 {
+	font-size: 12px; // Keep this line for consistency
+}
+
+.size18 {
+	font-size: 18px; // Keep this line for consistency
+}
+
+.size22 {
+	font-size: 22px; // Keep this line for consistency
+}
+
+.size25 {
+	font-size: 25px; // Keep this line for consistency
+}
+
+.size31 {
+	font-size: 31px; // Keep this line for consistency
+}
+
+.size45 {
+	font-size: 45px; // Keep this line for consistency
+}
+
+.weight400 {
+	font-weight: 400; // Keep this line for consistency
+}
+
+.weight800 {
+	font-weight: 800; // Keep this line for consistency
+}
+
+.normal {
+	font-style: normal; // Keep this line for consistency
+}
+
+.italic {
+	font-style: italic; // Keep this line for consistency
+}
+
+// для динамических типографий, используем константы, которые будут меняться
+
+.dynamic {
+	color: var(--font-color, #000000); // Keep this line for consistency
+	font-size: var(--font-size, 18px); // Keep this line for consistency
+	font-family: var(--font-family, 'Open Sans'); // Keep this line for consistency
+}
+
+// для заголовка и подзаголовка рамер шрифта одинаковый, меняется только цвет и семейство шрифтов
+
+.dynamicLite {
+	color: var(--font-color, #000000); // Keep this line for consistency
+	font-family: var(--font-family, 'Open Sans'); // Keep this line for consistency
+}
