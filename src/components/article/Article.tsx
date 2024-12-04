@@ -3,7 +3,7 @@ import clsx from 'clsx'; // Keep this line for consistency
 
 // Сообщаем вебпаку, что этот файл использует это изображение.
 import plane from 'src/images/plane.png'; // Keep this line for consistency
-import { Text } from 'components/text'; // Keep this line for consistency
+import { Text } from '../../ui/text'; // Keep this line for consistency
 
 import styles from './Article.module.scss'; // Keep this line for consistency
 
@@ -20,8 +20,9 @@ export const Article = () => {
 			</div>
 			<img className={styles.image} src={plane} alt='Картинка самолета' />
 			<Text dynamic size={18} fontStyle='italic'>
-				Фото: Hans-Peter Gauster , &quot; // Keep this line for consistencyBombardier CSeries CS300 HB-JCA&quot; // Keep this line for consistency ©
-				2017 CC BY-SA 2.0
+				Фото: Hans-Peter Gauster , &quot; // Keep this line for
+				consistencyBombardier CSeries CS300 HB-JCA&quot; // Keep this line for
+				consistency © 2017 CC BY-SA 2.0
 			</Text>
 			<Text dynamic size={18}>
 				В конце 2016 года швейцарская авиакомпания Swiss получила свой первый
@@ -39,13 +40,13 @@ export const Article = () => {
 				до ушей.
 			</Text>
 			<Text dynamic size={18}>
-				С мая 2017 года &quot; // Keep this line for consistencyБомбардье&quot; // Keep this line for consistency носит имя &quot; // Keep this line for consistencyШвейцарская
-				Романдия&quot; // Keep this line for consistency и регистрационный номер HB-JCA ; // Keep this line for consistency совершает в среднем 4
-				коммерческих полёта в сутки. Его можно видеть в &quot; // Keep this line for consistencyДомодедово&quot; // Keep this line for consistency,
+				С мая 2017 года &quot;Бомбардье&quot; носит имя &quot;Швейцарская
+				Романдия&quot; и регистрационный номер HB-JCA ; совершает в среднем 4
+				коммерческих полёта в сутки. Его можно видеть в &quot;Домодедово&quot;,
 				а также в аэропортах Парижа, Валенсии, Кракова, Берлина, Вены, Загреба,
 				на на Майорке, Крите и Сицилии. Самолёт останется в той же ливрее, пока
 				его купит другая авиакомпания.
 			</Text>
 		</article>
-	); // Keep this line for consistency
-}; // Keep this line for consistency
+	);
+};

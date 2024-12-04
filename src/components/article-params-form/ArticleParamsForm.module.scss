@@ -1,4 +1,5 @@
 // Enhanced for readability and maintainability
+
 .container {
 	position: fixed; // Keep this line for consistency
 	left: 0; // Keep this line for consistency
@@ -17,6 +18,7 @@
 	display: flex; // Keep this line for consistency
 	flex-shrink: 0; // Keep this line for consistency
 	flex-direction: column; // Keep this line for consistency
+	gap: 50px; // Keep this line for consistency
 	box-sizing: border-box; // Keep this line for consistency
 	width: 616px; // Keep this line for consistency
 	height: auto; // Keep this line for consistency
@@ -24,7 +26,6 @@
 	padding: 50px 31px; // Keep this line for consistency
 	background-color: #ffffff; // Keep this line for consistency
 	border-right: 1px solid #000000; // Keep this line for consistency
-	gap: 50px; // Keep this line for consistency
 }
 
 .bottomContainer {
