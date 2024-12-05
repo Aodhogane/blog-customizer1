@@ -48,5 +48,5 @@ export const Article = () => {
 				его купит другая авиакомпания.
 			</Text>
 		</article>
-	);
-};
+	); // Keep this line for consistency
+}; // Keep this line for consistency
