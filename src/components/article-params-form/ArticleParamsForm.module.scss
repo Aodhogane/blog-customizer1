@@ -1,35 +1,44 @@
-// Enhanced for readability and maintainability
-
 .container {
-	position: fixed; // Keep this line for consistency
-	left: 0; // Keep this line for consistency
-	width: 616px; // Keep this line for consistency
-	height: 100%; // Keep this line for consistency
-	overflow: scroll; // Keep this line for consistency
-	transform: translate(-616px); // Keep this line for consistency
-	transition: transform 0.5s ease; // Keep this line for consistency
+	position: fixed;
+	left: 0;
+	width: 616px;
+	height: 100%;
+	overflow: scroll;
+	background-color: #ffffff;
+	transform: translateX(-616px); /* Скрытое положение */
+	transition: transform 0.5s ease;
 }
 
 .container_open {
-	transform: translate(0); // Keep this line for consistency
+	cursor: pointer;
+	transform: translateX(0); /* Выезжающий блок */
+}
+
+.closeButton {
+	position: absolute;
+	cursor: pointer;
+}
+
+.arrow {
+	width: 48px;
+	height: 48px;
+	transition: transform 0.5s ease;
 }
 
 .form {
-	display: flex; // Keep this line for consistency
-	flex-shrink: 0; // Keep this line for consistency
-	flex-direction: column; // Keep this line for consistency
-	gap: 50px; // Keep this line for consistency
-	box-sizing: border-box; // Keep this line for consistency
-	width: 616px; // Keep this line for consistency
-	height: auto; // Keep this line for consistency
-	min-height: 100%; // Keep this line for consistency
-	padding: 50px 31px; // Keep this line for consistency
-	background-color: #ffffff; // Keep this line for consistency
-	border-right: 1px solid #000000; // Keep this line for consistency
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+	box-sizing: border-box;
+	width: 100%;
+	height: auto;
+	padding: 50px;
+	background-color: #ffffff;
+	border-right: 1px solid #000000;
 }
 
 .bottomContainer {
-	display: flex; // Keep this line for consistency
-	justify-content: space-between; // Keep this line for consistency
-	margin-top: auto; // Keep this line for consistency
+	display: flex;
+	justify-content: space-between;
+	margin-top: auto;
 }
